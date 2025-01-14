@@ -1,0 +1,547 @@
+/* Reset margin dan padding untuk seluruh halaman */
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow-x: hidden;
+  background-color: #f5f5dc; /* Warna cream */
+}
+
+/* Global Styles */
+body {
+font-family: 'Arial', sans-serif;
+margin-top: 56px; /* To avoid overlap with fixed navbar */
+}
+
+.navbar {
+box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand {
+font-size: 2rem;
+font-weight: bold;
+color: #f8a539;
+text-transform: uppercase;
+}
+
+.navbar-nav .nav-link {
+font-size: 1.1rem;
+color: #f8a539 !important;
+font-weight: 500;
+text-transform: uppercase;
+transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+color: #ffffff !important;
+}
+
+/* Slideshow */
+.carousel-item {
+position: relative;
+}
+
+.carousel-inner img {
+filter: brightness(70%);
+transition: all 0.5s ease;
+border-radius: 15px;
+width: 100%;
+height: auto;
+}
+
+.carousel-item:hover img {
+filter: brightness(100%);
+}
+
+.carousel-caption {
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+text-align: center;
+color: white;
+z-index: 10;
+}
+
+.carousel-caption h5 {
+font-size: 2.5rem;
+text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+.carousel-caption p {
+font-size: 1.2rem;
+text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+/* Adjustments for responsive design */
+@media (max-width: 1200px) {
+.carousel-caption h5 {
+  font-size: 2rem;
+}
+
+.carousel-caption p {
+  font-size: 1rem;
+}
+}
+
+@media (max-width: 768px) {
+.carousel-caption h5 {
+  font-size: 1.8rem;
+}
+
+.carousel-caption p {
+  font-size: 1 rem;
+}
+.carousel-caption {
+  padding: 15px;
+}
+}
+
+@media (max-width: 576px) {
+.carousel-caption h5 {
+  font-size: 1.5rem;
+}
+
+.carousel-caption p {
+  font-size: 0.9rem;
+}
+.carousel-caption {
+  width: 95%; /* Lebih kecil agar lebih rapat pada layar ponsel */
+  padding: 10px;
+}
+}
+
+
+/* Highlight Text */
+.highlight {
+color: #f8a539;
+font-weight: bold;
+}
+
+/* Welcome Section */
+.section-welcome {
+background: linear-gradient(to right, #f8a539, #e07a26); /* Gradien oranye */
+text-align: center;
+color: #fff;
+padding: 5rem 0;
+margin-bottom: 30px;
+}
+
+.section-welcome h1, .section-welcome p {
+text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Bayangan teks agar lebih jelas */
+}
+
+.section-welcome h1 {
+font-size: 3.5rem;
+font-weight: bold;
+animation: fadeIn 2s ease-out;
+}
+
+.section-welcome p {
+font-size: 1.25rem;
+margin: 1rem 0;
+animation: fadeIn 2s ease-out 0.5s;
+}
+
+.btn-warning {
+background-color: #f8a539;
+border: none;
+padding: 15px 30px;
+font-size: 1.2rem;
+font-weight: bold;
+text-transform: uppercase;
+border-radius: 30px;
+transition: background-color 0.3s ease;
+}
+
+.btn-warning:hover {
+background-color: #e07a26;
+cursor: pointer;
+}
+
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+.navbar-brand {
+  font-size: 1.6rem;
+}
+
+.navbar-nav .nav-link {
+  font-size: 1rem;
+}
+
+.carousel-caption h5 {
+  font-size: 2rem;
+}
+
+.carousel-caption p {
+  font-size: 1rem;
+}
+
+.section-welcome h1 {
+  font-size: 3rem;
+}
+
+.section-welcome p {
+  font-size: 1.1rem;
+}
+
+.btn-warning {
+  padding: 12px 25px;
+  font-size: 1rem;
+}
+}
+
+@media (max-width: 992px) {
+.navbar-nav .nav-link {
+  font-size: 0.9rem;
+}
+
+.carousel-caption h5 {
+  font-size: 1.8rem;
+}
+
+.carousel-caption p {
+  font-size: 0.9rem;
+}
+
+.section-welcome h1 {
+  font-size: 2.5rem;
+}
+
+.section-welcome p {
+  font-size: 1rem;
+}
+
+.btn-warning {
+  padding: 10px 20px;
+  font-size: 0.9rem;
+}
+}
+
+@media (max-width: 768px) {
+.navbar-nav .nav-link {
+  font-size: 0.85rem;
+}
+
+.carousel-caption h5 {
+  font-size: 1.5rem;
+}
+
+.carousel-caption p {
+  font-size: 0.85rem;
+}
+
+.section-welcome h1 {
+  font-size: 2rem;
+}
+
+.section-welcome p {
+  font-size: 0.9rem;
+}
+
+.btn-warning {
+  padding: 10px 18px;
+  font-size: 0.85rem;
+}
+}
+
+@media (max-width: 576px) {
+.navbar-nav .nav-link {
+  font-size: 0.8rem;
+}
+
+.carousel-caption h5 {
+  font-size: 1.3rem;
+}
+
+.carousel-caption p {
+  font-size: 0.8rem;
+}
+
+.section-welcome h1 {
+  font-size: 1.8rem;
+}
+
+.section-welcome p {
+  font-size: 0.85rem;
+}
+
+.btn-warning {
+  padding: 8px 15px;
+  font-size: 0.8rem;
+}
+/* Animations */
+@keyframes fadeIn {
+from {
+  opacity: 0;
+  transform: translateY(20px);
+}
+to {
+  opacity: 1;
+  transform: translateY(0);
+}
+}
+
+/* WOW.js animations */
+.wow {
+visibility: hidden;
+}
+
+.wow.animated {
+visibility: visible;
+}
+}
+
+
+/* Efek Hover pada Kartu Produk */
+.card {
+transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+transform: translateY(-10px);
+box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Efek Hover pada Gambar Produk */
+.card-img-top {
+transition: transform 0.3s ease;
+}
+
+.card-img-top:hover {
+transform: scale(1.05);
+}
+
+/* Efek pada Tombol */
+.btn-primary:hover {
+background-color: #0056b3;
+border-color: #0056b3;
+}
+
+.btn-warning:hover {
+background-color: #ffa726;
+border-color: #ffa726;
+}
+
+.produk-page .card-wrapper {
+flex: 1 1 calc(33.333% - 30px);
+max-width: 300px;
+}
+
+@media (max-width: 768px) {
+.produk-page .card-wrapper {
+  flex: 1 1 calc(50% - 20px); 
+}
+}
+
+@media (max-width: 576px) {
+.produk-page .card-wrapper {
+  flex: 1 1 100%; 
+}
+}
+/* Pemesanan Section */
+.pemesanan-section {
+background-color: #ffffff; 
+padding: 5rem 0; 
+}
+
+.card {
+border-radius: 8px;
+box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.card-title {
+font-size: 1.5rem;
+color: #495057;
+}
+
+#produk-terpilih {
+font-size: 1.5rem;
+color: #f8a539; /* Warna oranye untuk produk yang dipilih */
+margin-bottom: 20px;
+}
+
+.form-label {
+font-weight: bold;
+color: #333;
+font-size: 1.1rem;
+}
+
+.form-control {
+border-radius: 5px;
+padding: 15px;
+font-size: 1.1rem;
+border: 1px solid #ddd;
+transition: all 0.3s ease;
+}
+
+.form-control:focus {
+border-color: #f8a539;
+box-shadow: 0 0 5px rgba(248, 165, 57, 0.8);
+}
+
+button[type="submit"] {
+background-color: #f8a539;
+border: none;
+color: white;
+font-size: 1.1rem;
+padding: 12px 0;
+border-radius: 30px;
+width: 100%;
+cursor: pointer;
+transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+background-color: #e07a26;
+}
+
+button[type="submit"]:focus {
+outline: none;
+}
+
+/* Gaya untuk Tombol 'Beli' */
+.btn-beli {
+background-color: #ff7f50; 
+font-weight: bold;
+padding: 12px 20px;
+border-radius: 50px; 
+transition: background-color 0.3s ease, transform 0.3s ease;
+border: none;
+width: 100%;
+}
+
+.btn-beli:hover {
+background-color: #e67e22; 
+transform: scale(1.05); 
+}
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+.pemesanan-section {
+  padding: 3rem 0; 
+}
+
+.card {
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+#produk-terpilih {
+  font-size: 1.3rem;
+}
+
+.form-label, .form-control {
+  font-size: 1rem;
+}
+
+button[type="submit"] {
+  font-size: 1rem;
+  padding: 10px 0;
+}
+}
+
+@media (max-width: 576px) {
+.card-body {
+  padding: 20px;
+}
+
+#produk-terpilih {
+  font-size: 1.1rem;
+}
+
+button[type="submit"] {
+  font-size: 0.95rem;
+}
+}
+
+/*testimoni*/
+body {
+padding-top: 70px; 
+}
+
+#testimoniForm {
+background-color: #f8f9fa;
+padding: 20px;
+border-radius: 8px;
+box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.testimoni-item {
+background-color: #ffffff;
+padding: 15px;
+border-radius: 8px;
+box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+margin-bottom: 15px;
+}
+
+.alert {
+display: none;
+}
+
+footer {
+padding: 20px 0;
+text-align: center;
+background-color: #f8f9fa;
+margin-top: 40px;
+}
+
+footer a {
+color: #007bff;
+text-decoration: none;
+}
+
+footer a:hover {
+text-decoration: underline;
+}
+
+
+/* Footer */
+footer {
+background-color: #222;
+color: #f8f9fa;
+padding: 20px 0;
+text-align: center;
+position: relative;
+}
+
+footer a {
+color: #f8f9fa;
+font-weight: bold;
+text-decoration: none;
+margin-right: 15px;
+}
+
+footer a:hover {
+color: #ffc107;
+text-decoration: underline;
+}
+
+footer p {
+font-size: 1rem;
+margin-top: 10px;
+}
+
+/* Scroll to Top Button */
+footer a {
+font-size: 1.1rem;
+font-weight: bold;
+text-decoration: none;
+padding: 5px 10px;
+}
+
+footer a:hover {
+text-decoration: none;
+color: #ffc107;
+background-color: #333;
+border-radius: 5px;
+padding: 5px 10px;
+}
+
+footer p {
+margin-top: 15px;
+font-size: 1.2rem;
+color: #f8f9fa;
+} 
