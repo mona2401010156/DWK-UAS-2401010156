@@ -1,16 +1,16 @@
-/* Reset margin dan padding untuk seluruh halaman */
+/* margin dan padding untuk seluruh halaman */
 body, html {
   margin: 0;
   padding: 0;
   height: 100%;
   overflow-x: hidden;
-  background-color: #f5f5dc; /* Warna cream */
+  background-color: #f5f5dc;
 }
 
 /* Global Styles */
 body {
 font-family: 'Arial', sans-serif;
-margin-top: 56px; /* To avoid overlap with fixed navbar */
+margin-top: 56px; 
 }
 
 .navbar {
@@ -128,7 +128,7 @@ margin-bottom: 30px;
 }
 
 .section-welcome h1, .section-welcome p {
-text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Bayangan teks agar lebih jelas */
+text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); 
 }
 
 .section-welcome h1 {
@@ -146,11 +146,11 @@ animation: fadeIn 2s ease-out 0.5s;
 .btn-warning {
 background-color: #f8a539;
 border: none;
-padding: 15px 30px;
-font-size: 1.2rem;
+padding: 5px 10px;
+font-size: 16px;
 font-weight: bold;
 text-transform: uppercase;
-border-radius: 30px;
+border-radius: 45px;
 transition: background-color 0.3s ease;
 }
 
@@ -187,7 +187,7 @@ cursor: pointer;
 }
 
 .btn-warning {
-  padding: 12px 25px;
+  padding: 12px 10px;
   font-size: 1rem;
 }
 }
@@ -271,26 +271,6 @@ cursor: pointer;
   padding: 8px 15px;
   font-size: 0.8rem;
 }
-/* Animations */
-@keyframes fadeIn {
-from {
-  opacity: 0;
-  transform: translateY(20px);
-}
-to {
-  opacity: 1;
-  transform: translateY(0);
-}
-}
-
-/* WOW.js animations */
-.wow {
-visibility: hidden;
-}
-
-.wow.animated {
-visibility: visible;
-}
 }
 
 
@@ -358,7 +338,7 @@ color: #495057;
 
 #produk-terpilih {
 font-size: 1.5rem;
-color: #f8a539; /* Warna oranye untuk produk yang dipilih */
+color: #f8a539; 
 margin-bottom: 20px;
 }
 
@@ -399,22 +379,6 @@ background-color: #e07a26;
 
 button[type="submit"]:focus {
 outline: none;
-}
-
-/* Gaya untuk Tombol 'Beli' */
-.btn-beli {
-background-color: #ff7f50; 
-font-weight: bold;
-padding: 12px 20px;
-border-radius: 50px; 
-transition: background-color 0.3s ease, transform 0.3s ease;
-border: none;
-width: 100%;
-}
-
-.btn-beli:hover {
-background-color: #e67e22; 
-transform: scale(1.05); 
 }
 
 
